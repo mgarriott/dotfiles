@@ -1,0 +1,66 @@
+# Reload configuration with :source .ratpoisonrc
+startup_message off
+
+escape C-f
+
+# Some keys to have always pressable.
+definekey top XF86AudioMute exec ~/bin/toggle-mute
+definekey top XF86AudioLowerVolume exec ~/bin/volume-down
+definekey top XF86AudioRaiseVolume exec ~/bin/volume-up
+
+unbind C-c
+bind c exec urxvt
+
+bind C exec chromium
+
+bind exclam colon
+bind colon exec
+bind d exec ~/bin/fdump
+bind D exec ~/bin/frestore
+bind q tmpwm openbox
+bind F5 source /home/matt/.ratpoisonrc
+bind End exec systemctl poweroff
+bind Delete exec systemctl reboot
+bind Next exec systemctl suspend
+bind m ratclick 2
+bind e exec gvim ~/.ratpoisonrc
+bind v exec gvim
+bind t exec /home/matt/bin/alarm.rb
+
+bind h focusleft
+bind j focusdown
+bind k focusup
+bind l focusright
+
+bind H exchangeleft
+bind J exchangedown
+bind K exchangeup
+bind L exchangeright
+
+unbind Left
+unbind Right
+unbind Up
+unbind Down
+
+# Work specific bindings
+newkmap work
+definekey top M-w readkey work
+definekey work s exec urxvt -cd ~/rails/admin -e rails server
+definekey work c exec urxvt -cd ~/rails/admin
+definekey work C exec urxvt -cd ~/rails/admin -e rails console
+definekey work d exec urxvt -e ssh_dreamhost
+definekey work v exec gvim --cmd "cd ~/rails/admin" -S ~/rails/admin/admin.vim
+
+# Setup a keymap specifically for groups.
+newkmap group
+definekey top C-g readkey group
+definekey group space gnext
+definekey group N gnew
+definekey group p gprev
+definekey group G groups
+definekey group s gselect
+definekey group m gmove
+definekey group M gmerge
+definekey group r grename
+definekey group d gdelete
+definekey group g meta C-g
