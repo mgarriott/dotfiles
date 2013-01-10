@@ -4,7 +4,8 @@
     git clone git@github.com:mgarriott/dotfiles.git ~/.dotfiles
 
     # Create file symlinks
-    sh ~/.dotfiles/linkify.sh
+    cd ~/.dotfiles/
+    rake
 
-_Note that if any of the files listed in linkify.sh already exist they will NOT
+_Note that if any of the files listed in the Rakefile already exist they will NOT
 be overwritten._
