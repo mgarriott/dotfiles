@@ -21,7 +21,7 @@ PS1='\[\e[0;32m\][\u\e[m\]\e[0;31m\]@\e[m\]\e[0;35m\]\h\e[m\] \[\e[1;34m\]\W\[\e
 # Enable tab complete for sudo
 complete -cf sudo
 
-export EDITOR="gvim"
+export EDITOR="vim"
 
 export SUDO_EDITOR="/usr/bin/vim -p -X"
 
