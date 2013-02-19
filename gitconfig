@@ -1,0 +1,23 @@
+[user]
+	email = matt.garriott@gmail.com
+	name = Matt Garriott
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	last = log HEAD -1
+	ca = commit -am
+[push]
+	default = simple
+[i18n]
+	logOutputEncoding = utf-8
