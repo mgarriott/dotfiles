@@ -27,10 +27,12 @@ bind F5 source /home/matt/.ratpoisonrc
 bind End exec systemctl poweroff
 bind Delete exec systemctl reboot
 bind Next exec systemctl suspend
-bind m ratclick 2
+bind M ratclick 2
+bind m exec urxvt -e sh -c "export EDITOR=vim && mutt"
 bind e exec gvim ~/.ratpoisonrc
 bind v exec gvim
 bind t exec /home/matt/bin/alarm.rb
+bind C-p exec ratpoison -c "gselect email" && ratpoison -c next
 
 bind h focusleft
 bind j focusdown
