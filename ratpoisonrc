@@ -61,6 +61,7 @@ definekey work v exec gvim --cmd "cd ~/rails" -S ~/rails/admin.vim
 # Setup a keymap specifically for groups.
 newkmap group
 definekey top C-g readkey group
+definekey group C-g gother
 definekey group space gnext
 definekey group N gnew
 definekey group p gprev
@@ -71,3 +72,15 @@ definekey group M gmerge
 definekey group r grename
 definekey group d gdelete
 definekey group g meta C-g
+definekey group 0 gselect 0
+definekey group 1 gselect 1
+definekey group 2 gselect 2
+definekey group 3 gselect 3
+definekey group 4 gselect 4
+definekey group 5 gselect 5
+definekey group 6 gselect 6
+definekey group 7 gselect 7
+definekey group 8 gselect 8
+definekey group 9 gselect 9
+
+rudeness 13
