@@ -11,13 +11,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+# For urxvt config file.
+xrdb -merge ~/.Xresources
+
 xmodmap ~/.xmodmaprc
 
 case $1 in
 
 ratpoison)
-  # For urxvt config file.
-  xrdb -merge ~/.Xresources
   exec ratpoison
   ;;
 fluxbox)
