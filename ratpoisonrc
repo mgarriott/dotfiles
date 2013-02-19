@@ -52,11 +52,11 @@ unbind Down
 # Work specific bindings
 newkmap work
 definekey top M-w readkey work
-definekey work s exec urxvt -cd ~/rails/admin -e rails server
-definekey work c exec urxvt -cd ~/rails/admin
-definekey work C exec urxvt -cd ~/rails/admin -e rails console
+definekey work s exec urxvt -cd ~/rails -e rails server
+definekey work c exec urxvt -cd ~/rails
+definekey work C exec urxvt -cd ~/rails -e rails console
 definekey work d exec urxvt -e ssh_dreamhost
-definekey work v exec gvim --cmd "cd ~/rails/admin" -S ~/rails/admin/admin.vim
+definekey work v exec gvim --cmd "cd ~/rails" -S ~/rails/admin.vim
 
 # Setup a keymap specifically for groups.
 newkmap group
