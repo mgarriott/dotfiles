@@ -7,6 +7,7 @@
 
 export HISTSIZE=10000
 export HISTFILESIZE=10000
+export BROWSER=chromium
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
