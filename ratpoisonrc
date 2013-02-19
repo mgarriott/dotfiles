@@ -7,6 +7,11 @@ escape C-f
 definekey top XF86AudioMute exec ~/bin/toggle-mute
 definekey top XF86AudioLowerVolume exec ~/bin/volume-down
 definekey top XF86AudioRaiseVolume exec ~/bin/volume-up
+definekey top XF86AudioPlay exec ruby ~/bin/pause_spotify.rb
+definekey top Pause exec ~/bin/toggle-mic-mute
+
+definekey top XF86Back prev
+definekey top XF86Forward next
 
 unbind C-c
 bind c exec urxvt
